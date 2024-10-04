@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/mavi2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:100vh;
+
+}
+nav {
+    background-color: #efefef;
+    color: white(247, 243, 243);
+    padding: 15px;
+    text-align: center;
+}
+img,video{
+    width:100%;
+}
+a, a:active, a:link, a::before, a::after{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.content {
+    padding: 20px;
+}
+.topbar{
+    width:100%;
+    height:50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-center;
+}
+
+.topbar .wrapper{
+    width: 100%;
+    max-width:1366px ; /*en geniş boyut. yani sayfa ne kadar büyürse büyüsün içindekiler genişlemez.*/
+    display: flex;
+}
+.topbar .left, .topbar .right{
+    flex: 3;
+    height: 100%;
+    background-color:rgb(8, 56, 93);
+    display: flex;
+    align-items:center; /*sayfa içinde dikey hizala*/
+    justify-content: space-evenly;/*eşit boşluk bırak*/
+}
+.topbar .center{
+    flex:6;
+    height: 100%;
+    background-color:rgb(8, 56, 93) ;
+    display: flex;
+    align-items:center; /*sayfa içinde dikey hizala*/
+    justify-content: space-evenly;/*eşit boşluk bırak*/
+}
+.topbar .right span img{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:rgb(8, 56, 93) ;
+}
+
+footer {
+    background-color:rgb(8, 56, 93); 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 900px;
+    width: 100%;
+    bottom: 0;
+}
+
+.container{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translatex(-50%);
+    display:flex;
+    background-color: #616261b0; /*containerin arka planı*/
+    border-radius: 50px;
+    color:#fff
+
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px ; /*yazı kenarlardan 50px uzakta oldu. */
+    text-align:center;
+    
+}

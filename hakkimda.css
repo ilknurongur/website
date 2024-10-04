@@ -1,0 +1,141 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(images/mavi2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+nav {
+    background-color: #efefef;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto; /* Videonun genişliğini koruyarak boyutlandırır */
+}
+
+a, a:active, a:link, a::before, a::after {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.content {
+    padding: 20px;
+}
+
+.topbar {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-center;
+}
+
+.topbar .wrapper {
+    width: 100%;
+    max-width: 1366px; /* Sayfa ne kadar büyürse büyüsün içindekiler genişlemez */
+    display: flex;
+}
+
+.topbar .left, .topbar .right {
+    flex: 3;
+    height: 100%;
+    background-color: rgb(8, 56, 93);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topbar .center {
+    flex: 6;
+    height: 100%;
+    background-color: rgb(8, 56, 93);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topbar .right span img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(8, 56, 93);
+}
+
+.container {
+    position: relative;
+    margin: 50px auto; /* Tüm container'lar arasında yukarıdan ve aşağıdan 50px boşluk */
+    padding: 20px;
+    max-width: 800px;
+    background-color: rgba(97, 98, 97, 0.7);
+    border-radius: 50px;
+    color: #fff;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: center;
+}
+
+.image {
+    display: flex;
+    top: 10%;
+    left: 20%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+}
+
+.kitap-image {
+    display: flex;
+}
+
+/* Müzik bölümü için stil */
+.music-container {
+    margin: 40px auto; /* Yukarıdan ve aşağıdan 40px boşluk */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    color: #fff;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Video container stilini düzenleme */
+.video-container {
+    margin: 20px 0; /* Videolar ile diğer içerikler arasında boşluk */
+    padding: 20px 0;
+    text-align: center;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color:rgb(8, 56, 93); 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    bottom: 0;
+}
